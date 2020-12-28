@@ -1,24 +1,12 @@
-# OPENRNDR template project
-A feature rich template for creating OPENRNDR programs based on Gradle/Kts
+# 用 OPENRNDR 將 Chatbot 訊息視覺化
 
-The template consists of a configuration for Gradle and an example OPENRNDR program. The Gradle configuration should serve as the
-go-to starting point for writing OPENRNDR-based software.
+本程式是「[中部人的 Chatbots Meetup 聊天機器人小小聚 #12](https://chatbots.kktix.cc/events/chatbots-meetup-in-central-taiwan-012)」的範例程式碼，完整說明請參考簡報。
 
-If you are looking at this from IntelliJ IDEA you can start by expanding the _project_ tab on the left. You will find a template program in `src/main/kotlin/TemplateProgram.kt`
+## 相關資源
 
-You will find some [basic instructions](https://guide.openrndr.org/#/02_Getting_Started_with_OPENRNDR/C00_SetupYourFirstProgram) in the [OPENRNDR guide](https://guide.openrndr.org)
+* 簡報檔：[https://www2.slideshare.net/shengyou/message-visualizer-using-openrndr](https://www2.slideshare.net/shengyou/message-visualizer-using-openrndr)
+* 原始碼：[https://github.com/shengyou/openrndr-for-message-visualizer](https://github.com/shengyou/openrndr-for-message-visualizer)
 
-## Gradle tasks
- - `run` runs the TemplateProgram
- - `jar` creates an executable platform specific jar file with all dependencies
- - `zipDistribution` creates a zip file containing the application jar and the data folder
- - `jpackageZip` creates a zip with a stand-alone executable for the current platform (works with Java 14 only)
+### 警告！
 
-## Cross builds
-To create runnable jars for a platform different from the platform you use to build one uses `./gradlew jar --PtargetPlatform=<platform>`. The supported platforms are `windows`, `macos`, `linux-x64` and `linux-arm64`. Note that the `linux-arm64` platform will only work with OPENRNDR snapshot builds from master and OPENRNDR 0.3.39 (a future version).
-
-## Github Actions
-
-This repository contains a number of Github Actions in `./github/workflows`. 
-The actions enable a basic build run on commit, plus publication actions that are executed when
-a commit is tagged with a version number like `v0.*` or `v1.*`.
+#### 這個範例程式碼僅是配合投影片上的展示而撰寫，範例內為配合概念演示，程式碼並非最佳實踐、程式內的諸多功能、錯誤處理也不完整，目的僅是做為概念驗證。請勿將這個程式碼佈署至上線機器，若因此造成您的損失恕不負責。
